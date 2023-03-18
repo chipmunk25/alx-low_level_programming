@@ -1,16 +1,21 @@
-#include <stdio.h>
+#include<stdio.h>
 
 /**
- * main - Entry point 
+ * main - Entry point
  * Description: print alphabets in reverse
- * Return: 0 (success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char ch;
+	char letter = 'z';
 
-	for (ch = 'z'; ch >= 'a'; ch--)
-		putchar (ch);
-	putchar ('\n');
+	while (letter >= 'a')
+	{
+		putchar(letter);
+		letter--;
+	}
+
+	putchar('\n');
+
 	return (0);
 }
