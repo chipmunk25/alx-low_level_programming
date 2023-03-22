@@ -14,8 +14,8 @@ int main(void)
 	while (count < 98)
 	{
 		next = first + second;
-		unsigned long lower = next & 0xFFFFFFFF;
-		unsigned long higher = next >> 32;
+		long lower = next & 0xFFFFFFFF;
+		long higher = next >> 32;
 
 		printf("%ld%ld", lower, higher);
 		if (count < 97)
