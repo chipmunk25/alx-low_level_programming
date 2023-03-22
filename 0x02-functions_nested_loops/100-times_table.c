@@ -19,7 +19,7 @@ void print_times_table(int n)
 		for (j = 0; j <= n; j++)
 		{
 			if (j == 0)
-				printf("%d", i * j);
+				printf("%*d",3, i * j);
 			else
 				printf(",%*d", i * j > 9 ? 2 : 3, i * j);
 		}
