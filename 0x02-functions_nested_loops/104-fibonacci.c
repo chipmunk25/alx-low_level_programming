@@ -14,10 +14,15 @@ int main(void)
 	while (count < 98)
 	{
 		next = first + second;
-		long lower = next & 0xFFFFFFFF;
-		long higher = next >> 32;
-
-		printf("%ld%ld", lower, higher);
+		if(count > 93)
+		{
+			long lower = next & 0xFFFFFFFF;
+			long higher = next >> 32;
+			
+			printf("%ld%ld", lower, higher);
+		}
+		else
+			printf("%ld", next);
 		if (count < 97)
 			printf(", ");
 		first = second;
