@@ -2,9 +2,10 @@
 
 /**
  * main - Entry point
- * Description: list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9.
+ * Description: list all the natural numbers below 10.
  * Return: 0 (success)
  */
+
 int main(void)
 {
 	int sum = 0;
