@@ -15,7 +15,7 @@ int main(void)
 	{
 		next = first + second;
 		unsigned long lower = next & 0xFFFFFFFF;
-		unsigned long higher = x >> 32;
+		unsigned long higher = next >> 32;
 
 		printf("%ld%ld", lower, higher);
 		if (count < 97)
