@@ -7,14 +7,17 @@
  */
 int main(void)
 {
-	long first = 1, second = 2, next;
+	unsigned long first = 1, second = 2, next;
 	int count = 2;
 
 	printf("%ld, %ld, ", first, second);
 	while (count < 98)
 	{
 		next = first + second;
-		printf("%ld", next);
+		unsigned long lower = next & 0xFFFFFFFF;
+		unsigned long higher = x >> 32;
+
+		printf("%ld%ld", lower, higher);
 		if (count < 97)
 			printf(", ");
 		first = second;
