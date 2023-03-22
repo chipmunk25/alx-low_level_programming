@@ -2,8 +2,7 @@
 
 /**
  * main - Entry point
- * Description: Finds and prints the sum of the even-valued terms
-.
+ * Description: Finds and prints the sum of the even-valued terms.
  * Return: Always 0.
  */
 int main(void)
