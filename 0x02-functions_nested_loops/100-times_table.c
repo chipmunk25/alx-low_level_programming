@@ -2,12 +2,12 @@
 #include "main.h"
 
 /**
- * print_times_table - prints the n times table, starting with 0
+ * times_table - prints the n times table, starting with 0
  * @n: the highest multiplier to print
  *
  * Return: void
  */
-void print_times_table(int n)
+void times_table(int n)
 {
 	int i, j;
 
