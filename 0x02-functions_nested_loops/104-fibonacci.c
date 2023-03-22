@@ -14,11 +14,11 @@ int main(void)
 	while (count < 98)
 	{
 		next = first + second;
-		if(count > 93)
+		if (count > 93)
 		{
-			long lower = next & 0xFFFFFFFF;
-			long higher = next >> 32;
-			
+			long lower = next / 100000000;
+			long higher = next % 100000000;
+
 			printf("%ld%ld", lower, higher);
 		}
 		else
