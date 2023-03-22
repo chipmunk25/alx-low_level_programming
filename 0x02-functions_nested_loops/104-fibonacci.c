@@ -7,13 +7,14 @@
  */
 int main(void)
 {
-	int first = 1, second = 2, next, count = 2;
+	long first = 1, second = 2, next;
+	int count = 2;
 
-	printf("%d, %d, ", first, second);
+	printf("%ld, %ld, ", first, second);
 	while (count < 98)
 	{
 		next = first + second;
-		printf("%d", next);
+		printf("%ld", next);
 		if (count < 97)
 			printf(", ");
 		first = second;
