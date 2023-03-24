@@ -1,33 +1,27 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Fizz Buzz Test
- * Description: print Fizz for multiples of 3
- * and Buzz for multiples of 5
- * and FizzBuzz for multiples of both
- * Return: 0 (success)
+ * print_square - prints a square follwed by a new line
+ * @size: dimension
+ *
  */
-int main(void)
+void print_square(int size)
 {
-	int i;
+	int i, j;
 
-	i = 1;
-	printf("%d", i);
-	for (i = 2; i <= 100; i++)
+	if (size <= 0)
 	{
-		printf(" ");
-		if (i % 3 == 0 || i % 5 == 0)
+		_putchar('\n');
+	}
+	else
+	{
+		for (i = 1; i <= size; i++)
 		{
-			if (i % 3 == 0)
-				printf("Fizz");
-			if (i % 5 == 0)
-				printf("Buzz");
-		}
-		else
-		{
-			printf("%d", i);
+			for (j = 1; j <= size; j++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
 	}
-	printf("\n");
-	return (0);
 }
