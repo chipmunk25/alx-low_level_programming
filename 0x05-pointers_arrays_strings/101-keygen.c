@@ -12,7 +12,7 @@ int main(void)
 	int i;
 
 	srand(time(NULL));
-	
+
 	for (i = 0; i < PASSWORD_LENGTH; i++)
 	{
 		int random_index = rand() % alphabet_length;
