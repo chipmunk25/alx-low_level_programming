@@ -23,12 +23,13 @@ int _atoi(char *s)
 		{
 			is_number_found = 1;
 
-			if (num > INT_MAX / 10 || (num == INT_MAX / 10 && (*s - '0') > INT_MAX % 10))
+			if (num > INT_MAX / 10 ||
+					(num == INT_MAX / 10 && (*s - '0') > INT_MAX % 10))
 			{
 				if (sign == 1)
-					return INT_MAX;
+					return (INT_MAX);
 				else
-					return INT_MIN;
+					return (INT_MIN);
 			}
 
 			num = num * 10 + (*s - '0');
@@ -37,5 +38,5 @@ int _atoi(char *s)
 			break;
 		s++;
 	}
-	return num * sign;
+	return (num * sign);
 }
