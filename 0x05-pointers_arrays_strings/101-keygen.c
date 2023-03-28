@@ -12,7 +12,8 @@ int main(void)
 	
 	srand(time(NULL));
 	
-	for (int i = 0; i < PASSWORD_LENGTH; i++) {
+	for (int i = 0; i < PASSWORD_LENGTH; i++)
+	{
 		int random_index = rand() % alphabet_length;
 		password[i] = alphabet[random_index];
 	}
