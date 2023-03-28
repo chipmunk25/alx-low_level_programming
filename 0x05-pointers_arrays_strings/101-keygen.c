@@ -9,10 +9,11 @@ int main(void)
 	const char* alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 	const int alphabet_length = 62;
 	char password[PASSWORD_LENGTH + 1] = {'\0'};
-	
+	int i;
+
 	srand(time(NULL));
 	
-	for (int i = 0; i < PASSWORD_LENGTH; i++)
+	for (i = 0; i < PASSWORD_LENGTH; i++)
 	{
 		int random_index = rand() % alphabet_length;
 		password[i] = alphabet[random_index];
