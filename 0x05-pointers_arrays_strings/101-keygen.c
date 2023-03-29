@@ -14,18 +14,17 @@
 
 int main(void)
 {
+	char password[PASSWORD_LENGTH + 1] = {'\0'};
 	char *alphaLower = "abcdefghijklmnopqrstuvwxyz";
 	char *alphaUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 	int alphaLower_length = strlen(alphaLower);
 	int alphaUpper_length = strlen(alphaUpper);
 	int alphabet_length = alphaLower_length + alphaUpper_length;
 	char *alphabet = malloc(alphabet_length + 1);
+	int i;
 
 	strcpy(alphabet, alphaLower);
 	strcat(alphabet, alphaUpper);
-
-	char password[PASSWORD_LENGTH + 1] = {'\0'};
-	int i;
 
 	srand(time(NULL));
 
