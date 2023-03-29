@@ -20,8 +20,10 @@ int main(void)
 	int alphaUpper_length = strlen(alphaUpper);
 	int alphabet_length = alphaLower_length + alphaUpper_length;
 	char *alphabet = malloc(alphabet_length + 1);
+
 	strcpy(alphabet, alphaLower);
 	strcat(alphabet, alphaUpper);
+
 	char password[PASSWORD_LENGTH + 1] = {'\0'};
 	int i;
 
