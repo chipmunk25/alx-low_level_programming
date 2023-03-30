@@ -14,7 +14,7 @@ int main(void)
 	while (count < 98)
 	{
 		next = first + second;
-		if (count > 93)
+		if (count > 92)
 		{
 			long lower = next / 100000000;
 			long higher = next % 100000000;
